@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <!--Welcome to the source code! Website has been Created by Developer Jake.
+    /// \\\ \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ ///
+    \\\ /// /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\
+    /// \\\ \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ ///
+    \\\ /// /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\
+    \\\ \\\ \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ ///
+    /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\
+    \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ ///
+    -->
+    <head>
 
+        <meta charset="UTF-8">
+        <meta name="description" content="L.I.F.E. by Developer Jake">
+        <meta name="author" content="DeveloperJake">
+        <link rel="icon" href="https://i.ibb.co/Jrt6yMf/The-LIFEIcon.png">
+    <title>
+        L.I.F.E. Official Website
+    </title>
+    </head>
+    <style>
+        html {
+            
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            margin:0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .font{
+            font-family: Tahoma, Verdana, sans-serif;
+        }
+        p{
+            margin:20px;
+        }
+        #version{
+            
+        }
+        #grad {
+            background-image: linear-gradient(#630a02, black);
+            width: 100%;
+            height: 100%;
+        }
+
+        .topnav {
+          background-color: #333;
+          overflow: hidden;
+        }
+        .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          padding: 30px 32px;
+            text-decoration: underline dotted;       
+            font-size:20px;
+        }
+        
+        .topnav a:hover {
+          background-color: darkred;
+          color: black;
+        }
+        .container {
+          left: 0;
+          right: 0;
+         }
+        
+        .main {
+              position:relative;
+              width: 870px;
+              min-height: 0px;
+             padding-top:15px;
+             margin-bottom: 200px;
+
+        }
+        
+        .main:before {
+          content:'';
+          position: absolute;
+          width: 870px;
+          height: 80vw;
+          z-index: -1;
+          margin:auto;
+          border: 20px dashed #292929;
+          left:0;
+          background-color:rgba(60,60,60,.6);
+       
+        }        
+        .topnav a.active {
+          background-color: red;
+          color: white;
+        }
+
+        .center {
+          display: block;
+            margin:auto;
+          width: 50%;
+        }
+        .centered{
+            margin:auto;
+            /*margin-right:20px;*/
+        }
+        .centeredA{
+            margin:auto;
+        }
+        #icon-image{
+            width:80px;
+        }
+        #test{
+            margin-left: 80%;
+            margin-right:0px;
+        }
+        .box1{
+            background-color:rgba(157, 157, 157, 0.6);
+        }
+        
+
+    </style>
+    <body id = "grad" style = "background-color:#333333; color:#d6d6d6;">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class= "horizontal">
+            <div class="topnav" id="myTopnav">
+              <img src ="https://i.ibb.co/Jrt6yMf/The-LIFEIcon.png" id="icon-image" align=left>
+                <a id = "navtext" href="#home" class="active">Download Free</a>
+                <a id = "navtext" href="#news">About</a>
+                <a id = "navtext" href="#contact">Credits</a>              
+            </div>
+            <hr color=#333>
+            <hr color=#333>
+            <br>
+            <div class="container" >
+              <div class="main" style = "margin:auto">
+                  <h1 style="font-size:1.5vw;color:red;text-align:center;margin:auto;">L.I.F.E. Trailer   </h1>
+                  <iframe style ="margin:auto 2%"width="875" height="615" frameborder=0 src='https://www.wevideo.com/embed/#2253647167' allowfullscreen> ></iframe>
+              </div>
+            </div>
+
+            <h1 id="version" class="font"class="centeredA"style="text-align:center;align">Download Now!</h1>
+        <script>
+                    function getOS() {
+                      var userAgent = window.navigator.userAgent,
+                          platform = window.navigator.platform,
+                          macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+                          windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+                          os = null;
+                    
+                      if (macosPlatforms.indexOf(platform) !== -1) {
+                        os = 'Mac OS';
+                      } else if (iosPlatforms.indexOf(platform) !== -1) {
+                        os = 'iOS';
+                      } else if (windowsPlatforms.indexOf(platform) !== -1) {
+                        os = 'Windows';
+                      } else if (/Android/.test(userAgent)) {
+                        os = 'Android';
+                      } else if (!os && /Linux/.test(platform)) {
+                        os = 'Linux';
+                      }
+                      return os;
+                    }
+                    var theVersion = getOS();
+        document.getElementById("version").innerHTML = "Download for "+ theVersion;
+        </script>
+            <table class="centered">
+                <td>
+                    <iframe frameborder="0" src="https://itch.io/embed/1115436?border_width=5&amp;bg_color=323232&amp;fg_color=cf0000&amp;link_color=ae0202&amp;border_color=e17300" width="216" height="175"><a href="https://developer-jake.itch.io/life">L.I.F.E. by DeveloperJake</a></iframe>
+                    
+                </td>
+            </table>
+            
+
+</body>
+    
+    
+
+</html>
